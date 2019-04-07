@@ -1,0 +1,11 @@
+
+server:
+  port: 9000
+dubbo:
+  application:
+    name: stu_web
+  registry:
+    address: zookeeper://192.168.182.111:2181
+spring:
+  thymeleaf:
+    cache: false

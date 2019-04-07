@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql:///git_stu
+    username: root
+    password: 123456
+  thymeleaf:
+    cache: false
+dubbo:
+  application:
+    name: stu_service
+  registry:
+    address: zookeeper://192.168.182.111:2181
+server:
+  port: 9001
+

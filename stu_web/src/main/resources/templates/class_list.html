@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <base href="http://localhost:9000/">
+    <title>班级管理</title>
+</head>
+<body>
+<h3>班级管理</h3>
+<a href="class/toAdd">添加班级</a>
+<table border="1px">
+    <tr>
+        <td>班级编号</td>
+        <td>班级名称</td>
+        <td>操作</td>
+    </tr>
+    <tr th:each="class : ${classList}">
+        <td th:text="${class.clId}"></td>
+        <td th:text="${class.clName}"></td>
+        <td>
+            <a href="">编辑</a>
+            <a href="">删除</a>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
